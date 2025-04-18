@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/halal.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HalalNYC</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">HalalNYC</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <ul class="header__menu" data-aos="fade-down">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><img src="assets/search.svg" alt="search" /></li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li><img src="assets/menu.svg" alt="menu" /></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/gyro-1.png" alt="halal" data-aos="fade-up" />
+        <h1 data-aos="fade-up">
+          H <br />A <br />L <br />A <br />L
+        </h1>
+        <div class="hero-image__overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info" data-aos="fade-left">
+          <h1>Feel the taste of Halal food</h1>
+          <p>Feel the taste of the most popular Halal food from anywhere and anytime.</p>
+          <div class="hero-content__buttons">
+            <button class="hero-content__order-button">Explore Now</button>
+          </div>
+        </div>
+
+        <div class="hero-content__testimonial" data-aos="fade-up">
+          <div class="hero-content__customer flex-center">
+            <h4>20<span>+</span></h4>
+            <p>Halal Restaurants</p>
+          </div>
+          <div class="hero-content__review">
+            <img src="assets/user.png" alt="user" />
+            <p>"I love being able to find halal food from anywhere at any time."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="about-us__image">
+        <div class="about-us__image-food3">
+          <img src="assets/wings.png" alt="wings" data-aos="fade-right" />
+        </div>
+        <button class="about-us__button">
+          Learn More
+          <img src="assets/arrow-up-right.svg" alt="learn more" />
+        </button>
+        <div class="about-us__image-food4">
+          <img src="assets/chicken-platter.webp" alt="chicken platter" data-aos="fade-right" />
+        </div>
+      </div>
+
+      <div class="about-us__content" data-aos="fade-left">
+        <p class="sushi__subtitle">About Us</p>
+        <h3 class="sushi__title">Our mission is to bring true Halal flavours to you.</h3>
+        <p class="sushi__description">Rooted in the values of Halal tradition, we strive to serve every customer with sincerity, care, and an unforgettable taste of our culture.</p>
+      </div>
+    </section>
+
+    <section class="popular-foods" id="menu">
+      <h2 class="popular-foods__title" data-aos="flip-up">Popular Food</h2>
+    
+      <div class="popular-foods__filters sushi__hide-scrollbar" data-aos="fade-up">
+        <button class="popular-foods__filter-btn active">All</button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/gyro-1.png" alt="gyro" />
+          Sammy's Halal
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/crispy-chicken.png" alt="chicken" />
+          Dave's Hot Chicken
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/chicken-over-rice-no-bg.png" alt="rice" />
+          Shirazi
+        </button>
+        <button class="popular-foods__filter-btn">
+          <img src="/assets/chicken-platter.webp" alt="fries" />
+          Adels' Hot Gyro
+        </button>
+        <button class="popular-foods__filter-btn">All</button>
+      </div>
+    
+      <!-- BEGIN CAROUSEL CONTAINER -->
+      <div class="carousel-container">
+        <button class="carousel-arrow left">
+          <img src="assets/arrow-left.svg" alt="Scroll Left" />
+        </button>
+    
+        <div class="popular-foods__catalogue" id="restaurant-carousel" data-aos="fade-up">
+          <article class="popular-foods__card">
+            <img class="popular-foods__card-image" src="assets/gyro-platter.png" alt="gyro-plate" />
+            <h4 class="popular-foods__card-title">Gyro Cafe</h4>
+            <div class="popular-foods__card-details flex-between">
+              <div class="popular-foods__card-rating">
+                <img src="assets/star.svg" alt="star" />
+                <p>4.9</p>
+              </div>
+              <p class="popular-foods__card-price">$12.00</p>
+            </div>
+          </article>
+
+          
+    
+          <article class="popular-foods__card active-card">
+            <img class="popular-foods__card-image" src="assets/chicken-platter.webp" alt="chicken over rice" />
+            <h4 class="popular-foods__card-title">Halal Guys</h4>
+            <div class="popular-foods__card-details flex-between">
+              <div class="popular-foods__card-rating">
+                <img src="assets/star.svg" alt="star" />
+                <p>5.0</p>
+              </div>
+              <p class="popular-foods__card-price">$10.00</p>
+            </div>
+          </article>
+    
+          <article class="popular-foods__card">
+            <img class="popular-foods__card-image" src="assets/daves-hot-chicken.png" alt="hot wings" />
+            <h4 class="popular-foods__card-title">Dave's Hot Chicken</h4>
+            <div class="popular-foods__card-details flex-between">
+              <div class="popular-foods__card-rating">
+                <img src="assets/star.svg" alt="star" />
+                <p>4.7</p>
+              </div>
+              <p class="popular-foods__card-price">$8.00</p>
+            </div>
+          </article>
+        </div>
+    
+        <button class="carousel-arrow right">
+          <img src="assets/arrow-right.svg" alt="Scroll Right" />
+        </button>
+      </div>
+      <!-- END CAROUSEL CONTAINER -->
+    
+      <button class="popular-foods__button">
+        Explore Food
+        <img src="assets/arrow-right.svg" alt="arrow-right" />
+      </button>
+    </section>
+    
+
+    <section class="trending" id="food">
+      <section class="trending-sushi">
+        <div class="trending__content" data-aos="fade-right">
+          <p class="sushi__subtitle">What’s Trending</p>
+          <h3 class="sushi__title">Trending Halal Dishes</h3>
+          <p class="sushi__description">Check out the most loved Halal dishes in NYC!</p>
+          <ul class="trending__list flex-between">
+            <li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Chicken Over Rice</p></li>
+            <li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Lamb Gyro</p></li>
+            <li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Falafel Platter</p></li>
+            <li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Beef Kebabs</p></li>
+            <li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Spicy Wings</p></li>
+            <li><div class="trending__icon flex-center"><img src="assets/check.svg" alt="check" /></div><p>Hummus & Pita</p></li>
+          </ul>
+        </div>
+
+        <div class="trending__image flex-center">
+          <img src="assets/chicken-over-rice-no-bg.png" alt="chicken platter" data-aos="fade-left" />
+          <div class="trending__arrow trending__arrow-left">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical" />
+          </div>
+          <div class="trending__arrow trending__arrow-bottom">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal" />
+          </div>
+        </div>
+      </section>
+
+      <div class="trending__discover" data-aos="zoom-in">
+        <p>Discover</p>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <h2>What Our Customers Are Saying</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <img src="assets/user.png" alt="Customer 1">
+          <p>"I love the wide variety of Halal options in NYC, and this site makes it so easy to find great places!"</p>
+          <h4>John Doe</h4>
+        </div>
+        <div class="testimonial-card">
+          <img src="assets/user.png" alt="Customer 2">
+          <p>"A must-visit for anyone craving delicious halal food. The site is easy to use and has a great selection!"</p>
+          <h4>Jane Smith</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer flex-between">
+      <h3 class="footer__logo">
+        <span>Halal</span>NYC
+      </h3>
+
+      <ul class="footer__nav">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About Us</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <li class="flex-center">
+          <img src="assets/facebook.svg" alt="facebook" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/instagram.svg" alt="instagram" />
+        </li>
+        <li class="flex-center">
+          <img src="assets/twitter.svg" alt="twitter" />
+        </li>
+      </ul>
+    </footer>
+
+  
+    
+    
+  </body>
+</html>
