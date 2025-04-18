@@ -22,9 +22,7 @@
   - JavaScript (DOM manipulation, interactive features)  
 
 - **APIs Used (Optional)**:  
-  - Google Maps API (for location services and map integration)  
-  - Yelp API or Zomato API (to fetch real-time restaurant data)
-
+ 
 ## 🚀 Getting Started
 
 1. **Clone the repo:**
