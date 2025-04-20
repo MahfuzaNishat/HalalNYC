@@ -1,0 +1,62 @@
+    body {
+     font-family: sans-serif;
+     background-color:forestgreen;
+     padding: 20px;
+   }
+
+
+   .restaurant {
+     display: flex;
+     background-color: white;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     margin-bottom: 15px;
+     overflow: hidden;
+   }
+
+
+   .restaurant img {
+     width: 120px;
+     height: 120px;
+     object-fit: cover;
+     border-radius: 7%;
+   }
+
+
+   .info {
+     padding: 10px 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+
+
+   .info h3 {
+     margin: 0 0 5px 0;
+     font-size: 1.1em;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+
+
+   .rating {
+     color: #d32323;
+     margin-bottom: 6px;
+   }
+
+
+   .info a {
+     color: #0073bb;
+     text-decoration: none;
+     font-size: 0.9em;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: 520;
+   }
+
+
+   .info a:hover {
+     text-decoration: underline;
+     color: rebeccapurple;
+   }
+
+
+   

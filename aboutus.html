@@ -3,215 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #228B22;
-    }
-
-    .about-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-
-    .header {
-      text-align: center;
-      padding-bottom: 10px;
-    }
-
-    .header h1 {
-      font-size: 60px;
-      color: white;
-    }
-
-    .subheader {
-      text-align: center;
-      font-size: 18px;
-      color: white;
-      max-width: 800px;
-      margin: 0 auto 20px;
-    }
-
-    .section-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .section-wrapper:nth-child(odd) {
-      flex-direction: row-reverse;
-    }
-
-    .section-image {
-      flex: 1;
-    }
-
-    .section-image img {
-      width: 100%;
-      border-radius: 20px;
-      max-width: 250px;
-    }
-
-    .section {
-      background-color: beige;
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
-      width: 70%;
-      flex: 2;
-    }
-
-    .section h2 {
-      color: #2d3a2e;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    .section p {
-      font-size: 17px;
-      line-height: 1.7;
-      color: #555;
-    }
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .profile-card {
-      background-color: oldlace;
-      padding: 30px 20px;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
-      text-align: center;
-      width: 260px;
-    }
-
-    .profile-card h3 {
-      margin-top: 15px;
-      font-size: 22px;
-      color: #2d3a2e;
-    }
-
-    .linkedin {
-      margin-top: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .linkedin a {
-      color: #0077b5;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 16px;
-      
-    }
-
-    .linkedin img {
-      width: 24px;
-      height: 24px;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 30px 10px;
-      color: beige;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      .about-container {
-        align-items: center;
-      }
-
-      .section-wrapper {
-        flex-direction: column !important;
-      }
-
-      .section,
-      .cards {
-        width: 100% !important;
-        align-self: center !important;
-      }
-    }
-  </style>
+  <title>About Us - HalalNYC</title>
+  <link rel="icon" type="image/png" href="/halal.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="about-container">
-    <div class="header">
-      <h1>About HalalNYC</h1>
-    </div>
-    <div class="subheader">
-      HalalNYC is a simple and user-friendly website built with HTML, CSS, and JavaScript to help Muslims in New York City easily find halal food options and connect with local halal restaurants.
-    </div>
+  <!-- Header Navigation -->
+  <header>
+    <nav class="header__nav">
+      <div class="header__logo">
+        <h4 data-aos="fade-down">HalalNYC</h4>
+        <div class="header__logo-overlay"></div>
+      </div>
 
-    <div class="section-wrapper">
-      <div class="section">
-        <h2>Our Mission</h2>
-        <p>
-          Whether you're a student, commuter, or local resident, HalalNYC is here to guide you to delicious, certified halal meals throughout the five boroughs. We aim to bridge the gap between busy lifestyles and halal accessibility by creating a smooth, informative browsing experience for all.
+      <ul class="header__menu" data-aos="fade-down">
+        <li><a href="explore.html">Menu</a></li>
+      <li><a href="explore.html">Food</a></li>
+      <li><a href="index.html">Services</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><img src="assets/search.svg" alt="search" /></li>
+      </ul>
+
+      <ul class="header__menu-mobile" data-aos="fade-down">
+        <li><img src="assets/menu.svg" alt="menu" /></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <div class="about__header">
+        <h1>About HalalNYC</h1>
+        <p class="about__subheader">
+          HalalNYC is a simple and user-friendly website built to help Muslims in New York City easily find halal food options and connect with local halal restaurants.
         </p>
       </div>
-      <div class="section-image">
-        <img src="assets/Asset-1.png" alt="Mission Image">
-      </div>
-    </div>
 
-    <div class="section-wrapper">
-      <div class="section">
-        <h2>Our Love for Food</h2>
-        <p>
-          We’re more than just developers—we’re food lovers with a deep appreciation for rich flavors and diverse culinary traditions. Growing up in New York, we’ve shared late-night shawarmas, spicy chicken over rice, and warm conversations over sizzling platters. HalalNYC is a reflection of that love—our tribute to the halal food culture that brings people together.
-        </p>
+      <div class="about__section reverse">
+        <div class="about__image">
+          <img src="assets/Asset-1.png" alt="Our Mission" />
+        </div>
+        <div class="about__content">
+          <h2>Our Mission</h2>
+          <p>
+            Whether you're a student, commuter, or local resident, HalalNYC is here to guide you to delicious, certified halal meals throughout the five boroughs.
+            We aim to bridge the gap between busy lifestyles and halal accessibility by creating a smooth, informative browsing experience for all.
+          </p>
+        </div>
       </div>
-      <div class="section-image">
-        <img src="assets/food love.png" alt="Love for Food">
-      </div>
-    </div>
 
-    <div class="section-wrapper">
-      <div class="section">
-        <h2>Meet the Creators</h2>
-        <div class="cards">
-          <div class="profile-card">
-            
-            <h3>Harmain Munir</h3>
-            <div class="linkedin">
-              <img src="assets/linkedin-with-circle-icon-512x512-cvyrro5n.png" alt="LinkedIn">
-              <a href="https://www.linkedin.com/in/harmain-munir-335511243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcMHO1vhVReOOFwWXQvNtiw%3D%3D">LinkedIn Profile</a>
+      <div class="about__section">
+        <div class="about__image">
+          <img src="assets/food love.png" alt="Love for Food" />
+        </div>
+        <div class="about__content">
+          <h2>Our Love for Food</h2>
+          <p>
+            We’re more than just developers—we’re food lovers with a deep appreciation for rich flavors and diverse culinary traditions.
+            Growing up in New York, we’ve shared late-night shawarmas, spicy chicken over rice, and warm conversations over sizzling platters.
+            HalalNYC is a reflection of that love—our tribute to the halal food culture that brings people together.
+          </p>
+        </div>
+      </div>
+
+      <div class="about__section reverse">
+        <div class="about__image">
+          <img src="assets/girls 222.png" alt="Meet the Team" />
+        </div>
+        <div class="about__content">
+          <h2>Meet the Creators</h2>
+          <div class="about__cards">
+            <div class="card">
+              <h3>Harmain Munir</h3>
+              <div class="card__social">
+                <img src="assets/linkedin-with-circle-icon-512x512-cvyrro5n.png" alt="LinkedIn" />
+                <a href="https://www.linkedin.com/in/harmain-munir-335511243">LinkedIn</a>
+              </div>
             </div>
-          </div>
 
-          <div class="profile-card">
-            
-            <h3>Mahfuza Nishat</h3>
-            <div class="linkedin">
-              <img src="assets/linkedin-with-circle-icon-512x512-cvyrro5n.png" alt="LinkedIn">
-              <a href="https://www.linkedin.com/in/mahfuza-nishat-80177a354?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUVuh%2BalYQFq26w0XFKQMRg%3D%3D">LinkedIn Profile</a>
+            <div class="card">
+              <h3>Mahfuza Nishat</h3>
+              <div class="card__social">
+                <img src="assets/linkedin-with-circle-icon-512x512-cvyrro5n.png" alt="LinkedIn" />
+                <a href="https://www.linkedin.com/in/mahfuza-nishat-80177a354">LinkedIn</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section-image">
-        <img src="assets/girls 222.png" alt="Team Photo">
-      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="footer">
-    &copy; 2025 HalalNYC. All rights reserved.
-  </div>
+  <!-- Footer -->
+  <footer class="footer flex-between">
+    <h3 class="footer__logo"><span>Halal</span>NYC</h3>
+    <ul class="footer__nav">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about-us">About Us</a></li>
+    </ul>
+    <ul class="footer__social">
+      <li class="flex-center">
+        <img src="assets/facebook.svg" alt="facebook" />
+      </li>
+      <li class="flex-center">
+        <img src="assets/instagram.svg" alt="instagram" />
+      </li>
+      <li class="flex-center">
+        <img src="assets/twitter.svg" alt="twitter" />
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>
