@@ -12,7 +12,7 @@
 
 ## 📸 Screenshots
 
-> *(Add images here)*
+<img width="1435" alt="Screenshot 2025-04-20 at 10 37 46 PM" src="https://github.com/user-attachments/assets/24d940fc-2215-4c3b-959e-d3281e0195f5" />
 
 ## 🛠 Tech Stack
 
@@ -21,11 +21,3 @@
   - CSS3 (Flexbox/Grid for layout, responsive design)  
   - JavaScript (DOM manipulation, interactive features)  
 
-- **APIs Used (Optional)**:  
- 
-## 🚀 Getting Started
-
-1. **Clone the repo:**
-
-```bash
-git clone https://github.com/yourusername/halalnyc.git
