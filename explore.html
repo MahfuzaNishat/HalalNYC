@@ -15,60 +15,64 @@
   margin-bottom: 30px; /* or padding-bottom: 30px; */
 }
 
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 400px; /* smaller width */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
 
+.restaurant img {
+  width: 100%;
+  height: 180px; /* smaller image height */
+  object-fit: cover;
+}
 
-   .restaurant {
-     display: flex;
-     background-color: white;
-     border-radius: 8px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     margin-bottom: 15px;
-     overflow: hidden;
-   }
+.info {
+  padding: 15px; /* slightly less padding */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
+.info iframe {
+  width: 100%;
+  height: 200px; /* reduce map height */
+  border: none;
+  border-radius: 8px;
+}
 
-   .restaurant img {
-     width: 120px;
-     height: 120px;
-     object-fit: cover;
-     border-radius: 7%;
-   }
+.info a {
+  display: inline-block;
+  background: linear-gradient(to right, #398f2b, #0288d1);
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
 
+.info a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
 
-   .info {
-     padding: 10px 15px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-   }
-
-
-   .info h3 {
-     margin: 0 0 5px 0;
-     font-size: 1.1em;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   }
-
-
-   .rating {
-     color: #d32323;
-     margin-bottom: 6px;
-   }
-
-
-   .info a {
-     color: #0073bb;
-     text-decoration: none;
-     font-size: 0.9em;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-weight: 520;
-   }
-
-
-   .info a:hover {
-     text-decoration: underline;
-     color: rebeccapurple;
-   }
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
 
 
    
@@ -77,14 +81,15 @@
 <body>
   <nav class="header__nav">
     <div class="header__logo">
-      <h4 data-aos="fade-down">HalalNYC</h4>
+      <a href="index.html">
+        <h4 data-aos="fade-down">HalalNYC</h4>
+      </a>  
       <div class="header__logo-overlay"></div>
     </div>
 
     <ul class="header__menu" data-aos="fade-down">
-      <li><a href="explore.html">Menu</a></li>
       <li><a href="explore.html">Food</a></li>
-      <li><a href="index.html">Services</a></li>
+      <li><a href="services.html">Services</a></li>
       <li><a href="aboutus.html">About Us</a></li>
       <li><img src="assets/search.svg" alt="search" /></li>
     </ul>
@@ -93,13 +98,14 @@
       <li><img src="assets/menu.svg" alt="menu" /></li>
     </ul>
   </nav>
-
+  <div class="restaurant-grid">
     <div class="restaurant">
         <img src="assets/fatima.jpeg" alt="Restaurant">
         <div class="info">
           <h3>Fatima's Halal chinese</h3>
           <div class="rating">⭐ 4.5</div>
           <a href="https://fatimas-halal-kitchen.eggscellent.site/#google_vignette" target="_blank">Visit Website</a>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.139031540569!2d-73.80999722397412!3d40.71495577139322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261e37bde9a3f%3A0x34f474fcf2f7e936!2sFatima&#39;s%20Halal!5e0!3m2!1sen!2sus!4v1745203492058!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
@@ -109,6 +115,7 @@
      <h3>Dave's Hot Chicken</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://daveshotchicken.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96772.49163361957!2d-73.88982352612118!3d40.71492644678343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261001c37c4b7%3A0xa588fe9056c7173!2sDave&#39;s%20Hot%20Chicken!5e0!3m2!1sen!2sus!4v1745204161167!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -119,6 +126,7 @@
      <h3>Halal Munchies</h3>
      <div class="rating">⭐ 4.6</div>
      <a href="https://eathalalmunchies.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96806.90543831688!2d-74.14339360273439!3d40.69124480000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b7c1b60334d%3A0x1d85cf9e05b5169b!2sHalal%20Munchies!5e0!3m2!1sen!2sus!4v1745204188929!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -129,6 +137,7 @@
      <h3>Tex's Chicken and Burgers</h3>
      <div class="rating">⭐ 4.8</div>
      <a href="https://eattexs.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96806.9905519415!2d-74.1433938196864!3d40.69118621547586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2454627e74201%3A0x5b8ab9ae623705ab!2sTex&#39;s%20Chicken%20%26%20Burgers!5e0!3m2!1sen!2sus!4v1745204218366!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -138,6 +147,7 @@
       <h3>The Halal Guys</h3>
       <div class="rating">⭐ 4.7</div>
       <a href="https://thehalalguys.com" target="_blank">Visit Website</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0114772578277!2d-73.984222516493!3d40.76177229760732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259652b78b7cf%3A0xc9b18d28cbbde518!2sThe%20Halal%20Guys!5e0!3m2!1sen!2sus!4v1745204249245!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 
@@ -148,6 +158,7 @@
      <h3>Pizza Loves Sauce</h3>
      <div class="rating">⭐ 4.7</div>
      <a href="https://pizzalovessauce.dine.online/locations/5619072?fulfillment=pickup" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.772111197244!2d-73.99226492433809!3d40.72303297139196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25968046f6be7%3A0xb53ef06d06cf1c3a!2sPizza%20Loves%20Sauce!5e0!3m2!1sen!2sus!4v1745204272865!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -158,6 +169,7 @@
      <h3>Adel's Famous Halal Food</h3>
      <div class="rating">⭐ 4.9</div>
      <a href="https://adelsfamoushalalfood.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1286766285807!2d-73.98602301649396!3d40.75919449760885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258ff31b51735%3A0x8e1154cea25d10bf!2sAdel&#39;s%20Famous%20Halal%20Food!5e0!3m2!1sen!2sus!4v1745204299546!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -168,6 +180,7 @@
      <h3>Fluffies Hot Chicken</h3>
      <div class="rating">⭐ 4.6</div>
      <a href="https://www.fluffieshotchicken.com/?srsltid=AfmBOoq6JNvrUQKSIlaiutNpbTTI8RuFq0qFY7Pav4xWvnDIoco9_25B" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193694.021228895!2d-74.42300150546872!3d40.66363230000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2514ceaf63abb%3A0xf7d6e73770f2d93!2sFluffies%20Hot%20Chicken%20-%20Bayonne!5e0!3m2!1sen!2sus!4v1745204321177!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -178,6 +191,7 @@
      <h3>Qahwah House</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://qahwahhouse.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.974611385328!2d-73.9620578165091!3d40.71857539763056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25953721fc19d%3A0x185b29b3e7559d6e!2sQahwah%20House!5e0!3m2!1sen!2sus!4v1745204347877!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -188,6 +202,7 @@
      <h3>Haraz Coffee House</h3>
      <div class="rating">⭐ 4.7</div>
      <a href="https://www.harazcoffeehouse.com/?srsltid=AfmBOorCUCX5Ab12J3CPZB4hmzp9DJjDZh4FH4UB4hKhrpPL96eRue_G" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48378.6773012247!2d-74.07999525136715!3d40.72533930000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593fe41f8fef%3A0xbdce99ad0e157035!2sHaraz%20Coffee%20House!5e0!3m2!1sen!2sus!4v1745204393094!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -197,6 +212,7 @@
       <h3>Sammy's Halal Food</h3>
       <div class="rating">⭐ 4.7</div>
       <a href="https://www.sammyshalal.com" target="_blank">Visit Website</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48378.68794923195!2d-74.07999530557224!3d40.72532465188987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599160701423%3A0xf90710a609b0bc7f!2sSammy%E2%80%99s%20Halal%20Food!5e0!3m2!1sen!2sus!4v1745204412460!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 
@@ -207,6 +223,7 @@
      <h3>Atelier December</h3>
      <div class="rating">⭐ 4.9</div>
      <a href="https://www.instagram.com/atelier.december/?hl=en" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6054.907613538378!2d-73.9682209165379!3d40.64192589767206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b17fd8c0f49%3A0xcefb6e407e50dd16!2sAtelier%20December!5e0!3m2!1sen!2sus!4v1745204428162!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -217,6 +234,7 @@
      <h3>Affy's Premium Grill </h3>
      <div class="rating">⭐ 4.8</div>
      <a href="https://www.affyspremiumgrill.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6057.724590315453!2d-73.96488142434431!3d40.61086177140902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c244eb06ca9645%3A0x2a18fd48a21d22ac!2sAffy&#39;s%20Premium%20Grill!5e0!3m2!1sen!2sus!4v1745204443290!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -229,6 +247,7 @@
      <h3>Fevy's chicken</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://fevyschicken.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4570883228816!2d-73.89042062433774!3d40.72996667139085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f760853c49f%3A0xfe9afe009d40c482!2sFevy&#39;s!5e0!3m2!1sen!2sus!4v1745204488434!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -239,6 +258,7 @@
      <h3>Essence Of Kesar</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://essenceofkesar.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.0269019257844!2d-73.97657622432865!3d40.8932247713669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f1d80ef2c3b1%3A0xe6393e032e28cdf6!2sEssence%20Of%20Kesar%20%7C%20Modern%20Indian%20Dining%20%7C%20BYOB!5e0!3m2!1sen!2sus!4v1745204520622!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -253,6 +273,7 @@
      <h3>Lava Rock Kitchen</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://lavarockkitchen.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.6188749973985!2d-73.8569553243318!3d40.8363343713752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f51729539b61%3A0x5aa3bf2ae2688784!2sLava%20Rock%20Kitchen!5e0!3m2!1sen!2sus!4v1745204543161!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -267,6 +288,7 @@
      <h3>Desi Galli</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://www.desigalli.com target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12092.958229264934!2d-73.9915005915368!3d40.73475399223912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259770194cf8f%3A0xb33fadd99663127a!2sDesi%20Galli!5e0!3m2!1sen!2sus!4v1745204560489!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -281,6 +303,7 @@
      <h3>BK JANI</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://www.bkjani.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48371.83857516839!2d-74.02240052556044!3d40.734746210052684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c04ac7df885%3A0x80670fcc5cd6a070!2sBK%20JANI!5e0!3m2!1sen!2sus!4v1745204584676!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -290,9 +313,10 @@
  <div class="restaurant">
    <img src="assets/pink.jpg" alt="Restaurant">
    <div class="info">
-     <h3>Pick PIstachio Cafe</h3>
+     <h3>Pick Pistachio Cafe</h3>
      <div class="rating">⭐ 4.4</div>
      <a href="https://pinkpistachio.co" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.553537631288!2d-74.5597042243488!3d40.52935827142173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c100113a8293%3A0x775dffa13f15aef5!2sPink%20Pistachio%20Cafe!5e0!3m2!1sen!2sus!4v1745204610606!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -305,6 +329,7 @@
      <h3>Red Chilli</h3>
      <div class="rating">⭐ 4.6</div>
      <a href="https://www.redchillinyc.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d774649.5975716868!2d-76.60682912187498!3d40.67452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4408750964d25%3A0xaae0ec7aaf692d11!2sRed%20Chili&#39;s!5e0!3m2!1sen!2sus!4v1745204637774!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -317,6 +342,7 @@
      <h3>Jiang's Kitchen</h3>
      <div class="rating">⭐ 4.7</div>
      <a href="https://www.jiangskitchenny.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.5378689216677!2d-73.98863802433783!3d40.72818877139111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2594d16902583%3A0x520c4b13fed36ee2!2sJiang&#39;s%20Kitchen%20%E7%96%86%E6%B9%96%20-%20Halal%20Chinese%20Food!5e0!3m2!1sen!2sus!4v1745204650618!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -329,6 +355,7 @@
      <h3>Tangy Noodle</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://www.tangynoodle.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9911675025055!2d-74.00448492433716!3d40.7402198713894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593bbff5f355%3A0xf786a49d7525f091!2sTangy%20Noodle!5e0!3m2!1sen!2sus!4v1745204665606!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -341,6 +368,7 @@
      <h3>Taco Empreso</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://tacoempreso.odoo.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.3113340295963!2d-74.38646342434977!3d40.51260917142435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c90005907467%3A0x9b786f69b84ee6dc!2sTaco%20Empreso!5e0!3m2!1sen!2sus!4v1745204679724!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -355,6 +383,7 @@
      <h3>Labebe Prime</h3>
      <div class="rating">⭐ 4.8</div>
      <a href="http://www.labeberestaurant.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.7571627218435!2d-74.48594882435394!3d40.436375771436374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c464fbf815a1%3A0x75111b71e5b65ad6!2sLabebe%20Prime!5e0!3m2!1sen!2sus!4v1745204693372!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -367,6 +396,7 @@
      <h3>Uyghur Lagman House</h3>
      <div class="rating">⭐ 4.5</div>
      <a href="https://www.uyghurlagmanhouse.com" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.613303622405!2d-73.87343692433792!3d40.7265284713914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f2f960c3bf1%3A0xcb799e4a81071b4!2sUyghur%20Lagman%20House!5e0!3m2!1sen!2sus!4v1745204707383!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
 
@@ -377,15 +407,18 @@
      <h3>Holy Cow Burgers</h3>
      <div class="rating">⭐ 4.4</div>
      <a href="https://www.holycow.nyc" target="_blank">Visit Website</a>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96755.66835283265!2d-73.95326322581253!3d40.72649914499926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2616d1944c6e5%3A0xd8d956790df99254!2sHOLY%20COW%20BURGERS!5e0!3m2!1sen!2sus!4v1745204722665!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  </div>
- <footer class="footer flex-between">
+ 
+</div>
+<footer class="footer flex-between">
   <h3 class="footer__logo">
     <span>Halal</span>NYC
   </h3>
 
   <ul class="footer__nav">
-    <li><a href="#menu">Menu</a></li>
+    <li><a href="explore.html">Menu</a></li>
     <li><a href="#food">Food</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#about-us">About Us</a></li>
@@ -403,6 +436,7 @@
     </li>
   </ul>
 </footer>
+
 
 </body>
 </html>
